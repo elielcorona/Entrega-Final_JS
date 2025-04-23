@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Pago | QrossPass</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"/>
+  <link rel="stylesheet" href="../../css/theme-dark.css"/>
+</head>
+<body>
+
+<nav class="navbar navbar-expand-lg bg-dark text-white px-4">
+  <div class="container-fluid justify-content-between">
+    <a class="navbar-brand text-info fw-bold" href="../../index.html">
+      <i data-lucide="qr-code" class="me-2"></i> QrossPass
+    </a>
+    <a href="../../index.html" class="btn btn-outline-light">Volver al inicio</a>
+  </div>
+</nav>
+
+<section class="py-5">
+  <div class="container text-white">
+    <div class="card bg-dark shadow p-4 mx-auto" style="max-width: 600px;">
+      <h3 class="text-center mb-3">Resumen del Plan</h3>
+      <div id="resumen-usuario" class="mb-4"></div>
+      <div class="d-grid">
+        <button id="btn-pagar" class="btn btn-info fw-bold">Realizar Pago</button>
+      </div>
+    </div>
+  </div>
+</section>
+
+<footer class="text-white text-center py-4 mt-5">
+  <p>&copy; 2025 QrossPass. Todos los derechos reservados.</p>
+</footer>
+
+<script src="https://unpkg.com/lucide@latest"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+<script src="../../js/pago.js"></script>
+<script>lucide.createIcons();</script>
+
+</body>
+</html>

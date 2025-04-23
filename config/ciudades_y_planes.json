@@ -1,0 +1,15 @@
+{
+  "ciudades": [
+    "CDMX",
+    "Guadalajara",
+    "Monterrey",
+    "Querétaro",
+    "Puebla"
+  ],
+  "planes": [
+    "Mensual",
+    "Trimestral",
+    "Anual",
+    "Pro"
+  ]
+}

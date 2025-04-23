@@ -1,0 +1,206 @@
+
+/* Estilo base QrossPass - Tema Claro */
+body {
+  background-color: #ffffff;
+  color: #0B0C10;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* Links */
+a {
+  text-decoration: none;
+  color: #107bb9;
+}
+a:hover {
+  color: #0d5f91;
+}
+
+.qpass {
+  color: #107bb9;
+  font-weight: bold;
+}
+
+/* Secciones */
+section {
+  padding: 4rem 1.5rem;
+}
+
+/* Textos */
+h2 {
+  font-weight: bold;
+}
+
+/* Iconos Lucide */
+i[data-lucide] {
+  width: 26px;
+  height: 26px;
+  stroke: #107bb9;
+  stroke-width: 1.5;
+  vertical-align: middle;
+  margin-bottom: 0.5rem;
+}
+
+/* Hero */
+.hero img {
+  max-width: 100%;
+  height: auto;
+}
+
+/* Cards generales */
+.card {
+  background-color: #f4f8fb;
+  border-radius: 12px;
+  box-shadow: 0 0 10px rgba(16, 123, 185, 0.2);
+}
+.card h3, .card h4 {
+  color: #0B0C10;
+  font-weight: 700;
+}
+.card p {
+  font-size: 0.95rem;
+  color: #444;
+}
+
+/* Botones */
+.btn-info {
+  background-color: #107bb9;
+  color: #ffffff;
+  border: none;
+}
+.btn-info:hover {
+  background-color: #0d5f91;
+  color: #ffffff;
+}
+
+.btn-warning {
+  background-color: #f8d347;
+  color: #0B0C10;
+  border: none;
+}
+.btn-warning:hover {
+  background-color: #e6be33;
+  color: #0B0C10;
+}
+
+.btn:hover {
+  transform: scale(1.03);
+  transition: transform 0.3s ease;
+  z-index: 2;
+}
+
+.btn-outline-dark:hover {
+  background-color: #f0f0f0;
+}
+
+/* Navbar */
+.navbar-brand {
+  font-weight: bold;
+}
+.language-selector {
+  border: 1px solid #107bb9;
+  padding: 0.25rem 0.5rem;
+}
+
+.navbar .btn-outline-dark {
+  color: #107bb9;
+}
+
+/* CTA */
+.cta .btn {
+  min-width: 180px;
+  font-size: 1rem;
+  padding: 0.75rem 1.5rem;
+}
+
+/* Footer */
+footer {
+  font-size: 0.95rem;
+}
+footer a {
+  color: #107bb9;
+}
+footer a:hover {
+  color: #0d5f91;
+}
+
+/* Animación visual para scroll reveal */
+.fade-hidden {
+  opacity: 0;
+  transform: translateY(40px);
+  transition: all 0.6s ease;
+}
+
+.fade-in {
+  opacity: 1 !important;
+  transform: translateY(0) !important;
+}
+
+/* Efecto hover en cards */
+.card:hover {
+  transform: scale(1.03);
+  transition: transform 0.3s ease;
+  z-index: 2;
+}
+
+#mainNavbar {
+  transition: top 0.4s ease-in-out;
+  background-color: rgba(255, 255, 255, 0.8);
+  backdrop-filter: blur(1px);
+}
+
+#mainNavbar.hide {
+  top: -100px;
+}
+
+.dropdown-hover {
+  position: relative;
+}
+
+.hover-dropdown {
+  display: none;
+  position: absolute;
+  top: 120%;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 1000;
+  opacity: 0;
+  visibility: hidden;
+  transition: all 0.3s ease-in-out;
+  box-shadow: 0 10px 20px rgba(0,0,0,0.1);
+}
+
+.dropdown-hover:hover .hover-dropdown {
+  display: flex;
+  opacity: 1;
+  visibility: visible;
+}
+
+.hover-dropdown::before {
+  content: "";
+  position: absolute;
+  top: -8px;
+  left: 50%;
+  transform: translateX(-50%);
+  border-width: 0 8px 8px 8px;
+  border-style: solid;
+  border-color: transparent transparent #ffffff transparent;
+}
+
+#blur-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  backdrop-filter: blur(8px);
+  background-color: rgba(255, 255, 255, 0.3);
+  z-index: 900;
+  opacity: 0;
+  visibility: hidden;
+  transition: all 0.3s ease-in-out;
+}
+
+#blur-overlay.active {
+  opacity: 1;
+  visibility: visible;
+}

@@ -1,0 +1,388 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>QrossPass | Una sola membresía para todos los gimnasios</title>
+
+  <!-- Bootstrap y Lucide -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" />
+  <link rel="stylesheet" href="css/theme-dark.css" />
+
+</head>
+<body>
+  <!-- Navbar -->
+  <nav id="mainNavbar" class="navbar navbar-expand-lg fixed-top px-4">
+    <div class="container-fluid">
+  
+      <!-- Logo -->
+      <a class="navbar-brand d-flex align-items-center gap-2 text-white" href="#">
+        <i data-lucide="qr-code" class="text-info" style="width: 26px; height: 26px;"></i>
+        <h5 class="m-0 fw-bold fs-4">
+          <span class="text-info">Q</span>ross<span class="text-info">Pass</span>
+        </h5>
+      </a>
+  
+      <!-- Botón hamburguesa -->
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="qrossNavbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+  
+      <!-- Contenido colapsable -->
+      <div class="collapse navbar-collapse  p-4" id="qrossNavbarCollapse">
+  
+        <!-- Centro (solo desktop) -->
+        <div class="d-none d-lg-flex mx-auto nav-hover-zone">
+          <ul class="navbar-nav gap-4">
+  
+            <!-- Descarga App (hover) -->
+            <li class="nav-item position-relative dropdown-hover">
+              <a class="nav-link text-white fw-bold" href="#">Descarga la App</a>
+              <div class="hover-dropdown p-4 bg-dark text-white rounded shadow-lg d-flex flex-column gap-3 text-center" style="min-width: 340px; max-width: 480px;">
+                <img src="assets/images/mockup.jpg" alt="QR App" style="width: 130px; height: 130px; border-radius: 12px; margin: 0 auto;">
+                <div>
+                  <h6 class="fw-bold mb-2">Disponible para Android y versión Web</h6>
+                  <p class="small">Escanea el QR o selecciona tu opción para empezar a entrenar.</p>
+                  <div class="d-flex justify-content-center gap-2 flex-wrap mt-2">
+                    <a href="#" class="btn btn-outline-light btn-sm">iOS</a>
+                    <a href="#" class="btn btn-info btn-sm">Android</a>
+                  </div>
+                </div>
+              </div>
+            </li>
+            
+            <!-- Únete -->
+            <li class="nav-item position-relative dropdown-hover">
+              <a class="nav-link text-white fw-bold" href="#">Únete</a>
+              <div class="hover-dropdown p-4 bg-dark text-white rounded shadow-lg d-flex flex-column gap-3 text-center" style="min-width: 340px; max-width: 480px;">
+                <img src="assets/images/mockup.jpg" alt="Únete" style="width: 160px; height: auto; border-radius: 12px; margin: 0 auto;">
+                <div>
+                  <h6 class="fw-bold mb-2">Sé parte de la red QrossPass</h6>
+                  <p class="small">Crea tu cuenta como usuario o haz crecer tu gimnasio como partner.</p>
+                  <div class="d-flex justify-content-center gap-2 flex-wrap mt-2">
+                    <a href="pages/usuarios/registro.html" class="btn btn-info btn-sm">Soy Usuario</a>
+                    <a href="pages/partners/registro.html" class="btn btn-warning btn-sm text-dark">Soy Gimnasio</a>
+                  </div>
+                </div>
+              </div>
+            </li>
+            
+            <!-- Contáctanos -->
+            <li class="nav-item position-relative dropdown-hover">
+              <a class="nav-link text-white fw-bold" href="#">Contáctanos</a>
+              <div class="hover-dropdown p-4 bg-dark text-white rounded shadow-lg d-flex flex-column gap-3 text-center" style="min-width: 340px; max-width: 480px;">
+                <img src="assets/images/mockup.jpg" alt="Contacto" style="width: 160px; height: auto; border-radius: 12px; margin: 0 auto;">
+                <div>
+                  <h6 class="fw-bold mb-2">¿Tienes dudas o sugerencias?</h6>
+                  <p class="small">Estamos para ayudarte. Escríbenos por WhatsApp o en nuestra web.</p>
+                  <a href="#contacto" class="btn btn-outline-light btn-sm mt-2">Escríbenos</a>
+                </div>
+              </div>
+            </li>
+  
+          </ul>
+        </div>
+  
+        <!-- Centro (solo móvil) -->
+        <ul class="navbar-nav p-4 d-lg-none w-100 mt-3 gap-3">
+          <li class="nav-item">
+            <a class="nav-link text-white fw-bold" data-bs-toggle="collapse" href="#mobileDownload">Descarga la App</a>
+            <div class="collapse bg-dark p-3 rounded" id="mobileDownload">
+              <!-- sin imagen -->
+            </div>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link text-white fw-bold" data-bs-toggle="collapse" href="#mobileJoin">Únete</a>
+            <div class="collapse bg-dark p-3 rounded" id="mobileJoin">
+              <!-- sin imagen -->
+            </div>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link text-white fw-bold" data-bs-toggle="collapse" href="#mobileContact">Contáctanos</a>
+            <div class="collapse bg-dark p-3 rounded" id="mobileContact">
+              <!-- sin imagen -->
+            </div>
+          </li>
+        </ul>
+  
+        <!-- Botones derecha (comparten posición en móvil y desktop) -->
+        <div class="d-flex align-items-center ms-auto mt-3 mt-lg-0">
+          <select class="form-select form-select-sm bg-dark text-white language-selector me-3 border-info" style="width: auto;">
+            <option value="es">ES</option>
+            <option value="en">EN</option>
+          </select>
+          <a class="btn btn-primary me-2" href="pages/usuarios/registro.html">Registrarse</a>
+          <a class="btn btn-outline-light" href="pages/usuarios/principal.html">Iniciar sesión</a>
+        </div>
+      </div>
+    </div>
+  </nav>
+  
+  
+
+  
+
+  <!-- Hero Section -->
+  <section class="hero py-6">
+    <div class="container d-flex align-items-center justify-content-between ">
+      <div class="text-center text-md-start align-items-center">
+        <h1 class="display-6 text-info fw-bold">Una sola membresía, acceso a todos los gimnasios</h1>
+        <p class="lead text-light">QrossPass conecta gimnasios, usuarios y bienestar en una sola app.</p>
+        <a href="#" class="btn btn-info my-3">Descargar App</a>
+      </div>
+      <div class="d-none d-md-block">
+        <img src="assets/images/mockup.jpg" alt="App Mockup" class="img-fluid rounded" style="max-height: 400px;" />
+      </div>
+    </div>
+  </section>
+
+  <!-- ¿Qué es QrossPass? -->
+  <section class="about  text-white py-5">
+    <div class="container text-center">
+      <h2 class="mb-3">¿Qué es <span class="text-info">QrossPass</span>?</h2>
+      <p class="lead text-light mb-5">
+        QrossPass es tu llave digital al bienestar. Una sola membresía que te conecta con una red de gimnasios para que entrenes donde quieras, cuando quieras. Sin contratos. Sin límites.
+      </p>
+      <div class="row g-4 justify-content-center">
+        <div class="col-md-6 col-lg-4">
+          <div class="card bg-secondary text-white p-4 h-100 shadow ">
+            <i id="icon" data-lucide="calendar" class="mb-2"></i>
+            <h3>Acceso flexible</h3>
+            <p>Entrena en tu horario, sin restricciones. Cambia de gym según tu día y tu ritmo.</p>
+          </div>
+        </div>
+        <div class="col-md-6 col-lg-4">
+          <div class="card bg-secondary text-white p-4 h-100 shadow">
+            <i id="icon" data-lucide="qr-code" class="mb-2"></i>
+            <h3>Un solo QR</h3>
+            <p>Tu pase universal. Muestra tu código en la entrada y accede sin complicaciones.</p>
+          </div>
+        </div>
+        <div class="col-md-6 col-lg-4">
+          <div class="card bg-secondary text-white p-4 h-100 shadow">
+            <i id="icon" data-lucide="unlock" class="mb-2"></i>
+            <h3>Sin permanencias</h3>
+            <p>Cancelas cuando quieras. Sin penalizaciones, sin letras chiquitas.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+<!-- Planes para Usuarios -->
+<section class="plans-users  text-white py-5 fade-hidden">
+  <div class="container text-center">
+    <h2 class="mb-4">Planes para <span class="text-info">Usuarios</span></h2>
+    <div class="row g-4 justify-content-center">
+
+      <!-- Multigym Mensual -->
+      <div class="col-sm-6 col-lg-3">
+        <div class="card bg-dark text-white h-100 p-4 border border-info shadow">
+          <i id="icon" data-lucide="clock" class="mb-2"></i>
+          <h4 class="mb-1">Multigym Mensual</h4>
+          <p class="precio mb-3">Desde <strong>$449/mes</strong></p>
+          <ul class="text-start small ps-3 mt-3">
+            <li>Acceso a todos los gimnasios afiliados</li>
+            <li>Sin contratos ni penalizaciones</li>
+            <li>Ideal para probar QrossPass</li>
+          </ul>
+        </div>
+      </div>
+
+      <!-- Multigym Trimestral -->
+      <div class="col-sm-6 col-lg-3">
+        <div class="card bg-dark text-white h-100 p-4 border border-info shadow">
+          <i id="icon" data-lucide="calendar-days" class="mb-2"></i>
+          <h4 class="mb-1">Multigym Trimestral</h4>
+          <p class="precio mb-3">Desde <strong>$399/mes</strong></p>
+          <p class="small text-success">¡Ahorra $150!</p>
+          <ul class="text-start small ps-3 mt-3">
+            <li>Todos los beneficios del plan mensual</li>
+            <li>Precio preferencial por 3 meses</li>
+            <li>Flexibilidad + ahorro</li>
+          </ul>
+        </div>
+      </div>
+
+      <!-- Multigym Anual -->
+      <div class="col-sm-6 col-lg-3">
+        <div class="card bg-dark text-white h-100 p-4 border border-info shadow">
+          <i id="icon" data-lucide="calendar-check-2" class="mb-2"></i>
+          <h4 class="mb-1">Multigym Anual</h4>
+          <p class="precio mb-3">Desde <strong>$379/mes</strong></p>
+          <p class="small text-success">¡Ahorra $840!</p>
+          <ul class="text-start small ps-3 mt-3">
+            <li>Accede todo el año sin interrupciones</li>
+            <li>El mejor precio mensual</li>
+            <li>Ideal para usuarios constantes</li>
+          </ul>
+        </div>
+      </div>
+
+      <!-- Multigym Pro -->
+      <div class="col-sm-6 col-lg-3">
+        <div class="card bg-dark text-white h-100 p-4 border border-warning shadow">
+          <i id="icon" data-lucide="star" class="mb-2"></i>
+          <h4 class="mb-1 text-warning">Multigym Pro</h4>
+          <p class="precio mb-3">Desde <strong>$549/mes</strong></p>
+          <p class="small">Incluye beneficios premium y clases ilimitadas</p>
+          <ul class="text-start small ps-3 mt-3">
+            <li>Acceso sin límites ni restricciones</li>
+            <li>Clases grupales y especiales incluidas</li>
+            <li>Invitado mensual gratuito</li>
+            <li>Soporte prioritario</li>
+          </ul>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+
+<!-- Planes para Partners -->
+<section class="plans-partners text-white py-5 fade-hidden">
+  <div class="container text-center">
+    <h2 class="mb-4">¿Por qué ser <span class="text-info">partner?</span></h2>
+    <p class="lead text-light mb-5">
+      Súmate a la red QrossPass y haz que tu gimnasio reciba más visitas, más ingresos y más visibilidad digital.
+    </p>
+
+    <div class="row g-4 justify-content-center">
+
+      <div class="col-sm-6 col-lg-3">
+        <div class="card bg-secondary text-white h-100 p-4 shadow-sm">
+          <i id="icon" data-lucide="trending-up" class="mb-2"></i>
+          <h4>Aumenta tu tráfico</h4>
+          <p>Recibe nuevos clientes sin invertir en publicidad.</p>
+        </div>
+      </div>
+
+      <div class="col-sm-6 col-lg-3">
+        <div class="card bg-secondary text-white h-100 p-4 shadow-sm">
+          <i id="icon" data-lucide="scan-line" class="mb-2"></i>
+          <h4>Control por QR</h4>
+          <p>Valida cada visita con tecnología segura y sin fricciones.</p>
+        </div>
+      </div>
+
+      <div class="col-sm-6 col-lg-3">
+        <div class="card bg-secondary text-white h-100 p-4 shadow-sm">
+          <i id="icon" data-lucide="bar-chart-2" class="mb-2"></i>
+          <h4>Estadísticas</h4>
+          <p>Consulta reportes en tiempo real sobre tus visitas y ganancias.</p>
+        </div>
+      </div>
+
+      <div class="col-sm-6 col-lg-3">
+        <div class="card bg-secondary text-white h-100 p-4 shadow-sm">
+          <i id="icon" data-lucide="map-pin" class="mb-2"></i>
+          <h4>Visibilidad en mapa</h4>
+          <p>Haz que más personas te descubran en nuestra app.</p>
+        </div>
+      </div>
+
+    </div>
+
+    <div class="mt-5">
+      <a href="pages/partners/registro.html" class="btn btn-warning text-dark fw-bold p-2">
+        Únete como partner
+      </a>
+    </div>
+  </div>
+</section>
+
+<!-- Cómo funciona -->
+<section class="how-it-works  text-white py-5 fade-hidden">
+  <div class="container text-center">
+    <h2 class="mb-4">¿Cómo <span class="text-info">funciona?</span></h2>
+    <p class="lead text-light mb-5">
+      Usar QrossPass es muy sencillo. Sigue estos pasos y comienza a entrenar sin límites.
+    </p>
+
+    <div class="row g-4 justify-content-center">
+
+      <!-- Paso 1 -->
+      <div class="col-md-4">
+        <div class="card bg-dark text-white h-100 p-4 border-start border-info border-4 shadow-sm">
+          <i id="icon" data-lucide="user" class="mb-2"></i>
+          <h3>1. Regístrate</h3>
+          <p>Crea tu cuenta desde nuestra app o página web.</p>
+        </div>
+      </div>
+
+      <!-- Paso 2 -->
+      <div class="col-md-4">
+        <div class="card bg-dark text-white h-100 p-4 border-start border-info border-4 shadow-sm">
+          <i id="icon" data-lucide="credit-card" class="mb-2"></i>
+          <h3>2. Elige tu plan</h3>
+          <p>Selecciona la membresía que más se adapte a tu estilo de vida.</p>
+        </div>
+      </div>
+
+      <!-- Paso 3 -->
+      <div class="col-md-4">
+        <div class="card bg-dark text-white h-100 p-4 border-start border-info border-4 shadow-sm">
+          <i id="icon" data-lucide="qr-code" class="mb-2"></i>
+          <h3>3. Entrena con tu QR</h3>
+          <p>Escanea tu código en cada visita. ¡Y a entrenar!</p>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- Call to Action Final -->
+<section class="cta bg-dark text-center text-white py-5 fade-hidden">
+  <div class="container">
+    <h2 class="mb-4">¿Listo para dar el siguiente paso?</h2>
+    <p class="lead text-light mb-4">Elige cómo quieres formar parte de <span class="text-info">QrossPass</span>.</p>
+    <div class="d-flex flex-column flex-md-row justify-content-center gap-3">
+      <a href="pages/usuarios/registro.html" class="btn btn-info fw-bold px-4">
+        <i id="icon" data-lucide="users" class="me-1"></i> Soy Usuario
+      </a>
+      <a href="pages/partners/registro.html" class="btn btn-warning text-dark fw-bold px-4">
+        <i id="icon" data-lucide="dumbbell" class="me-1"></i> Soy Gimnasio
+      </a>
+    </div>
+  </div>
+</section>
+
+<!-- Footer -->
+<footer class=" text-white py-4 mt-0">
+  <div class="container text-center">
+    <p class="mb-2">&copy; 2025 QrossPass. Todos los derechos reservados.</p>
+    <div class="d-flex flex-column flex-md-row justify-content-center gap-3">
+      <a href="legal/tyc.html" class="text-decoration-none text-info">
+        <i id="icon" data-lucide="file-text" class="me-1"></i> Términos
+      </a>
+      <a href="legal/aviso-privacidad.html" class="text-decoration-none text-info">
+        <i id="icon" data-lucide="lock" class="me-1"></i> Aviso de Privacidad
+      </a>
+      <a href="#" class="text-decoration-none text-info">
+        <i id="icon" data-lucide="help-circle" class="me-1"></i> Ayuda / Contacto
+      </a>
+    </div>
+  </div>
+</footer>
+
+
+<!-- Scripts -->
+<script src="https://unpkg.com/lucide@latest"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+<script src="main.js"></script>
+
+
+<div id="blur-overlay"></div>
+<!-- Botón flotante para volver arriba -->
+<button id="scrollTopBtn" class="btn btn-info bg-dark position-fixed rounded-circle shadow">
+  <i data-lucide="arrow-up"></i>
+</button>
+
+
+<script>
+  lucide.createIcons();
+</script>
+
+</body>
+</html>
