@@ -1,0 +1,43 @@
+[
+    {
+      "nombre": "Fernanda Morales",
+      "plan": "Multigym Pro",
+      "vigencia": "2025-07-15",
+      "acompanantesDisponibles": 4,
+      "fechaUltimaRenovacion": "2025-06-01",
+      "qr": "QR1234567890"
+    },
+    {
+      "nombre": "Carlos Ramírez",
+      "plan": "Multigym Mensual",
+      "vigencia": "2025-06-30",
+      "acompanantesDisponibles": 0,
+      "fechaUltimaRenovacion": "2025-06-01",
+      "qr": "QR0987654321"
+    },
+    {
+      "nombre": "Ana Paula Torres",
+      "plan": "Multigym Pro",
+      "vigencia": "2025-08-10",
+      "acompanantesDisponibles": 3,
+      "fechaUltimaRenovacion": "2025-06-01",
+      "qr": "QR1122334455"
+    },
+    {
+      "nombre": "Luis Enrique Sánchez",
+      "plan": "Multigym Trimestral",
+      "vigencia": "2025-09-01",
+      "acompanantesDisponibles": 0,
+      "fechaUltimaRenovacion": "2025-06-01",
+      "qr": "QR6677889900"
+    },
+    {
+      "nombre": "Mariana López",
+      "plan": "Multigym Pro",
+      "vigencia": "2025-07-20",
+      "acompanantesDisponibles": 2,
+      "fechaUltimaRenovacion": "2025-06-01",
+      "qr": "QR4455667788"
+    }
+  ]
+  
