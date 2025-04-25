@@ -1,0 +1,98 @@
+[
+  {
+    "nombre": "Proteína Premium",
+    "descripcion": "Aislado de suero con 25g por porción",
+    "precio": 699,
+    "imagen": "../../assets/images/producto1.png",
+    "categoria": "Suplementos",
+    "ciudad": "CDMX"
+  },
+  {
+    "nombre": "Tapete de Yoga",
+    "descripcion": "Antideslizante, ideal para pilates y meditación",
+    "precio": 299,
+    "imagen": "../../assets/images/producto2.png",
+    "categoria": "Accesorios",
+    "ciudad": "Monterrey"
+  },
+  {
+    "nombre": "Termo QrossPass",
+    "descripcion": "Acero inoxidable 500ml edición limitada",
+    "precio": 249,
+    "imagen": "../../assets/images/producto3.png",
+    "categoria": "Accesorios",
+    "ciudad": "Guadalajara"
+  },
+  {
+    "nombre": "Guantes de Entrenamiento",
+    "descripcion": "Protección y agarre mejorado",
+    "precio": 199,
+    "imagen": "../../assets/images/producto4.png",
+    "categoria": "Accesorios",
+    "ciudad": "CDMX"
+  },
+  {
+    "nombre": "Creatina Monohidratada",
+    "descripcion": "Recuperación muscular avanzada",
+    "precio": 349,
+    "imagen": "../../assets/images/producto5.png",
+    "categoria": "Suplementos",
+    "ciudad": "Guadalajara"
+  },
+  {
+    "nombre": "Banda de Resistencia",
+    "descripcion": "Perfecta para ejercicios funcionales",
+    "precio": 159,
+    "imagen": "../../assets/images/producto6.png",
+    "categoria": "Equipamiento",
+    "ciudad": "Monterrey"
+  },
+  {
+    "nombre": "Botella de Agua",
+    "descripcion": "1L, ideal para el gimnasio",
+    "precio": 99,
+    "imagen": "../../assets/images/producto7.png",
+    "categoria": "Accesorios",
+    "ciudad": "CDMX"
+  },
+  {
+    "nombre": "Cinturón de Pesas",
+    "descripcion": "Soporte lumbar para levantamiento de pesas",
+    "precio": 399,
+    "imagen": "../../assets/images/producto8.png",
+    "categoria": "Equipamiento",
+    "ciudad": "Guadalajara"
+  },
+  {
+    "nombre": "Barra de Proteína",
+    "descripcion": "Snack saludable, 20g de proteína",
+    "precio": 49,
+    "imagen": "../../assets/images/producto9.png",
+    "categoria": "Snacks",
+    "ciudad": "Monterrey"
+  },
+  {
+    "nombre": "Zapatillas de Entrenamiento",
+    "descripcion": "Comodidad y soporte para tus entrenamientos",
+    "precio": 1299,
+    "imagen": "../../assets/images/producto10.png",
+    "categoria": "Ropa y Calzado",
+    "ciudad": "CDMX"
+  },
+  {
+    "nombre": "Camiseta de Compresión",
+    "descripcion": "Transpirable y de secado rápido",
+    "precio": 499,
+    "imagen": "../../assets/images/producto11.png",
+    "categoria": "Ropa y Calzado",
+    "ciudad": "Guadalajara"
+  },
+  {
+    "nombre": "Mancuernas Ajustables",
+    "descripcion": "Desde 2.5kg hasta 25kg, perfectas para el hogar",
+    "precio": 1999,
+    "imagen": "../../assets/images/producto12.png",
+    "categoria": "Equipamiento",
+    "ciudad": "Monterrey"
+  }
+]

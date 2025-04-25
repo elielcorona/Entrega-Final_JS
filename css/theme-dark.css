@@ -7,7 +7,7 @@ body {
   animation: gradientBG 18s ease infinite;
   color: #FFFFFF;
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-  padding-top: 90px;
+  padding-top: 60px;
 }
 
 @keyframes gradientBG {
@@ -119,6 +119,7 @@ i[data-lucide] {
 
 .btn-outline-light:hover {
   background-color: #0f1428;
+  color: #ffffff;
 }
 
 /* ─────────────────────────────
@@ -150,6 +151,13 @@ i[data-lucide] {
 .navbar-toggler{
   border: #66FCF1 solid 1px;
   background-color: #171717;}
+
+  .nav-page.active {
+    font-weight: bold;
+    color: #66FCF1 !important;
+    border-bottom: 1px solid #66FCF1;
+  }
+  
 
 /* ─────────────────────────────
 🎯 BOTÓN SCROLL TO TOP
@@ -195,6 +203,13 @@ i[data-lucide] {
   opacity: 1 !important;
   transform: translateY(0) !important;
 }
+
+.label-obligatorio::after {
+  content: " *";
+  color: red;
+  font-weight: bold;
+}
+
 
 /* ─────────────────────────────
 💬 DROPDOWNS CON HOVER
@@ -278,3 +293,51 @@ footer a:hover {
   font-size: 1rem;
   padding: 0.75rem 1.5rem;
 }
+
+/* ─────────────────────────────
+📊 Tabla QrossPass
+───────────────────────────── */
+.table-container {
+  overflow-x: auto;
+  box-shadow: #107bb9 0px 0px 10px;
+}
+
+.qrosspass-table {
+  width: 100%;
+  border-collapse: collapse;
+  background-color: #0B0C10;
+  color: #FFFFFF;
+  font-size: 0.95rem;
+  border: 1px solid #959697;
+}
+
+.qrosspass-table thead {
+  background-color: #102a43;
+  color: #ffffff;
+}
+
+.qrosspass-table th,
+.qrosspass-table td {
+  padding: 1rem;
+  border: 1px solid #424242;
+  text-align: center;
+}
+
+.qrosspass-table th {
+  font-weight: bold;
+}
+
+.qrosspass-table td.cross {
+  color: #777777;
+}
+
+.qrosspass-table tbody tr:hover {
+  background-color: #122232;
+  transition: background-color 0.3s ease;
+}
+
+.text-header-small{
+  color: #799cc0;
+}
+
+

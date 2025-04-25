@@ -1,0 +1,19 @@
+[
+    {
+      "nombre": "Titan Gym",
+      "imagen": "../../assets/images/banners/QrossPass_banner_1.jpg",
+      "link": "#"
+    },
+    {
+        "nombre": "Strong Fit",
+        "imagen": "../../assets/images/banners/QrossPass_banner_2.jpg",
+        "link": "#"
+      },
+      {
+        "nombre": "Strong Fit",
+        "imagen": "../../assets/images/banners/QrossPass_banner_3.jpg",
+        "link": "#"
+      }
+  ]
+  
+  

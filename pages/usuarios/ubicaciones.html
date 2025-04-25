@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Gimnasios | QrossPass</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"/>
+  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.3/dist/leaflet.css"/>
+  <link rel="stylesheet" href="../../css/theme-dark.css"/>
+  <style>
+    #map { height: 60vh; width: 100%; border-radius: 12px; margin-bottom: 2rem; }
+    .listado { font-size: 0.9rem; }
+    .listado .card { background-color: #1a1a1a; border: 1px solid #45A29E; }
+  </style>
+</head>
+<body>
+
+<!-- Navbar -->
+<nav class="navbar navbar-expand-lg fixed-top px-4">
+  <div class="container-fluid">
+    <a class="navbar-brand d-flex align-items-center gap-2 text-white" href="../../index.html">
+      <i data-lucide="qr-code" class="text-info" style="width: 26px; height: 26px;"></i>
+      <h5 class="m-0 fw-bold fs-4"><span class="text-info">Q</span>ross<span class="text-info">Pass</span></h5>
+    </a>
+    <button class="navbar-toggler bg-info" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse mt-2 mt-lg-0 justify-content-end" id="navbarNav">
+      <ul class="navbar-nav text-end gap-3">
+        <li class="nav-item"><a class="nav-link nav-page text-white" href="ubicaciones.html">Ubicaciones</a></li>
+        <li class="nav-item"><a class="nav-link nav-page text-white" href="historial.html">Historial</a></li>
+        <li class="nav-item"><a class="nav-link nav-page text-white" href="planes.html">Planes</a></li>
+        <li class="nav-item"><a class="nav-link nav-page text-white" href="perfil.html">Perfil</a></li>
+        <li class="nav-item"><a class="nav-link nav-page text-white" href="productos.html">Productos</a></li>
+        <li class="nav-item"><a class="nav-link nav-page text-white" href="#" id="logout">Cerrar sesión</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<section class="py-5 text-white" style="margin-top: 5rem;">
+  <div class="container">
+    <h2 class="text-center mb-4">Gimnasios Afiliados</h2>
+
+    <div class="row g-3 mb-4">
+      <div class="col-md-6">
+        <label class="form-label small">Ciudad</label>
+        <select id="filtro-ciudad" class="form-select form-select-sm bg-dark text-white border-info">
+          <option value="">Todas</option>
+        </select>
+      </div>
+      <div class="col-md-6">
+        <label class="form-label small">Tipo</label>
+        <select id="filtro-tipo" class="form-select form-select-sm bg-dark text-white border-info">
+          <option value="">Todos</option>
+        </select>
+      </div>
+    </div>
+
+    <div id="map" class="mb-5"></div>
+
+    <div class="listado">
+      <h4 class="text-center mb-3">Listado de Gimnasios</h4>
+      <div id="lista-gimnasios" class="row g-3">
+        <!-- Aquí se insertan los gimnasios -->
+      </div>
+    </div>
+  </div>
+</section>
+
+<footer class="text-white text-center py-4 mt-5">
+  <p>&copy; 2025 QrossPass. Todos los derechos reservados.</p>
+</footer>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+<script src="https://unpkg.com/leaflet@1.9.3/dist/leaflet.js"></script>
+<script src="../../js/usuarios/ubicaciones.js"></script>
+<script src="https://unpkg.com/lucide@latest"></script>
+<script src="../../main.js"></script>
+<script>lucide.createIcons();</script>
+</body>
+</html>

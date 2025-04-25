@@ -131,3 +131,16 @@ document.querySelectorAll('.fade-hidden').forEach(el => {
   observer.observe(el);
 });
 
+document.addEventListener("DOMContentLoaded", () => {
+  const navLinks = document.querySelectorAll(".nav-page");
+
+  navLinks.forEach(link => {
+    const currentPath = window.location.pathname.split("/").pop().split("?")[0].split("#")[0];
+    const linkPath = link.getAttribute("href").split("/").pop().split("?")[0].split("#")[0];
+
+    if (linkPath === currentPath) {
+      link.classList.add("active");
+    }
+  });
+});
+

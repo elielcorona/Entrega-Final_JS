@@ -1,0 +1,204 @@
+{
+  "gimnasios": [
+    {
+      "nombre": "Gym Elite Reforma",
+      "direccion": "Av. Reforma 123",
+      "ciudad": "CDMX",
+      "tipo": "Gimnasio",
+      "lat": 19.4326,
+      "lng": -99.1332
+    },
+    {
+      "nombre": "CrossBox Roma",
+      "direccion": "Calle Zacatecas 45",
+      "ciudad": "CDMX",
+      "tipo": "Box",
+      "lat": 19.4123,
+      "lng": -99.1634
+    },
+    {
+      "nombre": "Yoga Vive Coyoacán",
+      "direccion": "Av. Universidad 900",
+      "ciudad": "CDMX",
+      "tipo": "Yoga",
+      "lat": 19.3456,
+      "lng": -99.1622
+    },
+    {
+      "nombre": "Funcional Fit Condesa",
+      "direccion": "Av. Nuevo León 210",
+      "ciudad": "CDMX",
+      "tipo": "Funcional",
+      "lat": 19.4089,
+      "lng": -99.1732
+    },
+    {
+      "nombre": "Fuerza Total",
+      "direccion": "Eje Central 105",
+      "ciudad": "CDMX",
+      "tipo": "Gimnasio",
+      "lat": 19.4425,
+      "lng": -99.133
+    },
+    {
+      "nombre": "GDL Muscle Gym",
+      "direccion": "Av. Vallarta 1023",
+      "ciudad": "Guadalajara",
+      "tipo": "Gimnasio",
+      "lat": 20.6736,
+      "lng": -103.344
+    },
+    {
+      "nombre": "CrossZone GDL",
+      "direccion": "Calle Morelos 450",
+      "ciudad": "Guadalajara",
+      "tipo": "Box",
+      "lat": 20.68,
+      "lng": -103.35
+    },
+    {
+      "nombre": "Namaste Yoga",
+      "direccion": "Av. Patria 1555",
+      "ciudad": "Guadalajara",
+      "tipo": "Yoga",
+      "lat": 20.67,
+      "lng": -103.36
+    },
+    {
+      "nombre": "Funcional GDL",
+      "direccion": "Calle Brasilia 300",
+      "ciudad": "Guadalajara",
+      "tipo": "Funcional",
+      "lat": 20.667,
+      "lng": -103.343
+    },
+    {
+      "nombre": "Iron Gym Tlaquepaque",
+      "direccion": "Independencia 900",
+      "ciudad": "Guadalajara",
+      "tipo": "Gimnasio",
+      "lat": 20.6401,
+      "lng": -103.31
+    },
+    {
+      "nombre": "FitZone MTY",
+      "direccion": "Av. Constitución 1201",
+      "ciudad": "Monterrey",
+      "tipo": "Gimnasio",
+      "lat": 25.6866,
+      "lng": -100.3161
+    },
+    {
+      "nombre": "Box Norte",
+      "direccion": "Calle Lincoln 321",
+      "ciudad": "Monterrey",
+      "tipo": "Box",
+      "lat": 25.694,
+      "lng": -100.312
+    },
+    {
+      "nombre": "Zen Yoga MTY",
+      "direccion": "Av. Eugenio Garza 401",
+      "ciudad": "Monterrey",
+      "tipo": "Yoga",
+      "lat": 25.682,
+      "lng": -100.31
+    },
+    {
+      "nombre": "MTY Funcional",
+      "direccion": "Félix U. Gómez 500",
+      "ciudad": "Monterrey",
+      "tipo": "Funcional",
+      "lat": 25.69,
+      "lng": -100.309
+    },
+    {
+      "nombre": "Gym Pro San Pedro",
+      "direccion": "Calz. del Valle 123",
+      "ciudad": "Monterrey",
+      "tipo": "Gimnasio",
+      "lat": 25.6601,
+      "lng": -100.401
+    },
+    {
+      "nombre": "Fuerza Puebla",
+      "direccion": "Av. Juárez 1500",
+      "ciudad": "Puebla",
+      "tipo": "Gimnasio",
+      "lat": 19.0413,
+      "lng": -98.2062
+    },
+    {
+      "nombre": "Box Puebla",
+      "direccion": "16 de Septiembre 550",
+      "ciudad": "Puebla",
+      "tipo": "Box",
+      "lat": 19.044,
+      "lng": -98.21
+    },
+    {
+      "nombre": "Yoga Flow",
+      "direccion": "Blvd. Atlixco 765",
+      "ciudad": "Puebla",
+      "tipo": "Yoga",
+      "lat": 19.038,
+      "lng": -98.221
+    },
+    {
+      "nombre": "Core Puebla",
+      "direccion": "Calle Reforma 301",
+      "ciudad": "Puebla",
+      "tipo": "Funcional",
+      "lat": 19.036,
+      "lng": -98.2125
+    },
+    {
+      "nombre": "BodyPower",
+      "direccion": "Av. Las Torres 900",
+      "ciudad": "Puebla",
+      "tipo": "Gimnasio",
+      "lat": 19.0501,
+      "lng": -98.225
+    },
+    {
+      "nombre": "León Strong",
+      "direccion": "Av. López Mateos 2020",
+      "ciudad": "León",
+      "tipo": "Gimnasio",
+      "lat": 21.1234,
+      "lng": -101.6789
+    },
+    {
+      "nombre": "Box León",
+      "direccion": "Calle Madero 789",
+      "ciudad": "León",
+      "tipo": "Box",
+      "lat": 21.1211,
+      "lng": -101.68
+    },
+    {
+      "nombre": "Yoga León",
+      "direccion": "Blvd. Campestre 560",
+      "ciudad": "León",
+      "tipo": "Yoga",
+      "lat": 21.118,
+      "lng": -101.6777
+    },
+    {
+      "nombre": "Funcional Campestre",
+      "direccion": "Priv. Campestre 120",
+      "ciudad": "León",
+      "tipo": "Funcional",
+      "lat": 21.116,
+      "lng": -101.676
+    },
+    {
+      "nombre": "Elite Training",
+      "direccion": "Zona Centro 321",
+      "ciudad": "León",
+      "tipo": "Gimnasio",
+      "lat": 21.12,
+      "lng": -101.6755
+    }
+  ]
+}

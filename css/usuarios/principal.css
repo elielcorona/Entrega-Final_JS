@@ -1,0 +1,61 @@
+/* principal.css - Estilos exclusivos para la vista principal del usuario en QrossPass */
+
+/* Animaciones suaves */
+.fade-in-up {
+    opacity: 0;
+    transform: translateY(40px);
+    animation: fadeInUp 1s ease forwards;
+  }
+  
+  @keyframes fadeInUp {
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  
+  /* Estilo caja de bienvenida */
+  .bienvenida-box {
+    background-color: #0B0C10;
+    border: 1px solid #107bb9;
+    padding: 2rem;
+    border-radius: 1.5rem;
+    box-shadow: 0 4px 20px rgba(16, 123, 185, 0.3);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+  
+  .bienvenida-box:hover {
+    transform: scale(1.02);
+    box-shadow: 0 6px 25px rgba(16, 123, 185, 0.5);
+  }
+  
+  /* Código QR destacado */
+  #contenedor-qr img {
+    max-width: 260px;
+    box-shadow: 0 0 20px rgba(102, 252, 241, 0.5);
+    border: 2px solid #107bb9;
+    border-radius: 1rem;
+  }
+  
+  /* CTA adicional */
+  .cta-invitar {
+    margin-top: 2rem;
+  }
+  
+  .cta-invitar p {
+    font-size: 0.9rem;
+    color: #96C2DB;
+  }
+  
+  .cta-invitar .btn {
+    background-color: #f8d347;
+    color: #0B0C10;
+    font-weight: bold;
+    transition: transform 0.3s ease;
+  }
+  
+  .cta-invitar .btn:hover {
+    background-color: #e6be33;
+    transform: scale(1.05);
+  }
+  
